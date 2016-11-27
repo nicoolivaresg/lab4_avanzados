@@ -105,7 +105,7 @@ void salida(LISTA ** resultados, int Vfinal, int Vmax, FILE * file){
     fprintf(file,"%s %d %d %d\n", aux1->id, aux1 ->largo, aux1->alto, aux1->ancho);
     aux1 = aux1->sig;
   }
-  fprintf(file, "Espacio libre dentro de la caja:\n%d centímetros cúbicos", Vmax-Vfinal);
+  fprintf(file, "\nEspacio libre dentro de la caja:\n%d centímetros cúbicos", abs(Vmax-Vfinal));
 }
 
 int main(int argc, char const *argv[]) {
@@ -172,7 +172,7 @@ int main(int argc, char const *argv[]) {
     }
   }else{
     printf("Para ejecutar ingrese:\n\n\t");
-    printf("./main [nombre_entrada] [nombre_salida]\n");
+    printf("./pd [nombre_entrada] [nombre_salida]\n");
     return 1;
   }
   return 0;

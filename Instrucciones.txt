@@ -1,0 +1,16 @@
+Compilar en terminal Linux:
+
+  make -f makefile
+
+Compilar en CMD Windows:
+
+  gcc prog_dinam.c -o pd
+
+
+Ejecutar en terminal Linux:
+
+  ./pd [nombre_entrada] [nombre_salida]
+
+Ejecutar en CMD Windows:
+
+  pd.exe [nombre_entrada] [nombre_salida]
